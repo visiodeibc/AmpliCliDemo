@@ -19,7 +19,7 @@ import * as amplitude from "@amplitude/analytics-browser";
  * Optionally, a config object can be provided. Refer to https://amplitude.github.io/Amplitude-TypeScript/interfaces/Types.BrowserConfig.html
  * for object properties.
  */
-amplitude.init("400eeea324232848c31b10cb6a9849d5", "jake@amplitude.com");
+amplitude.init("-", "sample user id");
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
