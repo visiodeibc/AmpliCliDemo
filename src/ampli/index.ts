@@ -8,11 +8,11 @@
  * To update run 'ampli pull web'
  *
  * Required dependencies: @amplitude/analytics-browser@^1.3.0
- * Tracking Plan Version: 1
+ * Tracking Plan Version: 2
  * Build: 1.0.0
  * Runtime: browser:typescript-ampli-v2
  *
- * [View Tracking Plan](https://data.amplitude.com/jake-demo/jake-ampli-demo/events/main/latest)
+ * [View Tracking Plan](https://data.amplitude.com/jake-demo/jake-ampli-demo/events/featureDev/latest)
  *
  * [Full Setup Instructions](https://data.amplitude.com/jake-demo/jake-ampli-demo/implementation/web)
  */
@@ -30,10 +30,10 @@ export const ApiKey: Record<Environment, string> = {
  */
 export const DefaultConfiguration: BrowserOptions = {
   plan: {
-    version: '1',
-    branch: 'main',
+    version: '2',
+    branch: 'featureDev',
     source: 'web',
-    versionId: '552b9aca-02a4-4c9e-8294-aa5998eb3398'
+    versionId: 'e4e27dd3-d1e8-44f1-b049-c938c84e8a5a'
   },
   ...{
     ingestionMetadata: {
@@ -194,7 +194,7 @@ export class Ampli {
   /**
    * add_to_cart
    *
-   * [View in Tracking Plan](https://data.amplitude.com/jake-demo/jake-ampli-demo/events/main/latest/add_to_cart)
+   * [View in Tracking Plan](https://data.amplitude.com/jake-demo/jake-ampli-demo/events/featureDev/latest/add_to_cart)
    *
    * when adding to cart
    *

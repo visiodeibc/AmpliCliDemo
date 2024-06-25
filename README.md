@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Ampli Cli demo
+
+- Ampli 사용하는 코드 위치 [pages/withAmpli]
+- Ampli 사용하지 않았을 경우 [pages/withoutAmpli]
+
+## How to start
+
+1. ampli 클라이언트 설치 -> [link](https://amplitude.com/docs/sdks/ampli/ampli-cli)
+2. 노드 dependencies 설치 -> `npm install` or `yarn install` or `pnpm install`
+3. 앰플리튜드 데이터 탭에서 원하는 데이터 정의/설정
+4. `ampli pull` 실행해서 schema 생성
+5. `pages/_app.tsx` 에 API KEY 설정
+
 ## Getting Started
 
 First, run the development server:
@@ -17,18 +30,3 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
