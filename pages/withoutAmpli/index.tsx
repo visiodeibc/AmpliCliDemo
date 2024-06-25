@@ -1,16 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import {
-  identify,
-  setGroup,
-  groupIdentify,
-  track,
-  Identify,
-} from "@amplitude/analytics-browser";
+import styles from "../../styles/Home.module.css";
+import { track } from "@amplitude/analytics-browser";
 
-const Home: NextPage = () => {
+const WithoutAmpli: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -20,8 +13,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Ampli Demo</h1>
-        <button onClick={() => track("Button Click", { name: "App" })}>
+        <h1 className={styles.title}>Without Ampli</h1>
+        <button
+          style={{ marginTop: "20px", fontSize: "20px" }}
+          onClick={() => track("Add to Cart", { price: "123" })}
+        >
           Track
         </button>
       </main>
@@ -29,4 +25,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default WithoutAmpli;
