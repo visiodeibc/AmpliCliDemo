@@ -16,7 +16,7 @@ const WithoutAmpli: NextPage = () => {
         <h1 className={styles.title}>Without Ampli</h1>
         <button
           style={{ marginTop: "20px", fontSize: "20px" }}
-          onClick={() => track("Add to Cart", { price: "123" })}
+          onClick={() => track("Purchase", { productid: "123" })}
         >
           Track
         </button>
